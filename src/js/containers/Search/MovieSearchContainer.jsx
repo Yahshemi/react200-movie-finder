@@ -40,8 +40,6 @@ class MovieSearchContainer extends React.Component {
             <div className="col-sm-4" key={list.imdbID} style={{'marginBottom': '25px'}}>
               <div className="card" style={{'height': '100%'}} key={list.imdbID}>
                 <div className="card-body">
-                  {/* <h4 className="card-title">{list.Title}</h4> */}
-                  {/* <h6 className="text-muted">{list.Year}</h6> */}
                   <img className="card-img" src={list.Poster} />
                 </div>
                 <div className="card-footer">
