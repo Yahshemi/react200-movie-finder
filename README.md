@@ -1,5 +1,5 @@
 # Movie-Finder
-## A Movie Finder application using React, Redux and React Router.
+## A Movie Finder application using React, Redux, React Router, and the Omdb API.
 
 ## How to start
 
