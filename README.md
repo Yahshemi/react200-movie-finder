@@ -1,11 +1,23 @@
 # Movie-Finder
-## A Movie Finder application using React, Redux, React Router, and the Omdb API.
 
-## How to start
+This is a movie finder where the user is able to input a desired movie, and in return will recieve the movie and the poster of the movie. This app uses React-Redux, and the OMDB API
 
-### 1). Git clone
-### 2). npm run build
-### 3). npm run start
+## Installation
 
-https://yw-react200-movie-finder.herokuapp.com/
+```bash
+clone the project
 
+npm install
+
+npm run build
+
+npm run start
+```
+
+## Special Thanks
+
+Thanks to all the awesome people at [Flat Icon](https://www.flaticon.com/), and [Color Hunt](https://colorhunt.co/). Because of them, I can create stylish projects.
+
+## Check Me Out
+
+[CLICK HERE](https://yw-react200-movie-finder.herokuapp.com/)
