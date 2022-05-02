@@ -1,20 +1,20 @@
-import { types } from "./movieSearchActions";
+import { types } from './movieSearchActions';
 
 const defaultState = {
   resultList: [],
-  input: ""
+  input: ''
 };
 
 export default function MovieSearchReducer(state = defaultState, action) {
   const { type, payload } = action;
   switch (type) {
-    case types.UPDATE_MOVIE_TITLE + "_PENDING": {
+    case types.UPDATE_MOVIE_TITLE + '_PENDING': {
       return {
         ...state,
         resultList: []
       };
     }
-    case types.UPDATE_MOVIE_TITLE + "_FULFILLED": {
+    case types.UPDATE_MOVIE_TITLE + '_FULFILLED': {
       return {
         ...state,
         resultList: payload.search

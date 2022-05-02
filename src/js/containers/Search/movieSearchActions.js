@@ -1,6 +1,6 @@
 export const types = {
-  UPDATE_MOVIE_TITLE: "UPDATE_MOVIE_TITLE",
-  UPDATE_INPUT: "UPDATE_INPUT"
+  UPDATE_MOVIE_TITLE: 'UPDATE_MOVIE_TITLE',
+  UPDATE_INPUT: 'UPDATE_INPUT'
 };
 
 export function updateMovieTitle(title) {

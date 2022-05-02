@@ -1,5 +1,5 @@
-import React from "react";
-import { updateMovieDetail } from "./movieDetailActions";
+import React from 'react';
+import { updateMovieDetail } from './movieDetailActions';
 
 class MovieDetailContainer extends React.Component {
   constructor(props) {
@@ -21,22 +21,22 @@ class MovieDetailContainer extends React.Component {
       imdbrating
     } = this.props;
     return (
-      <div className="container">
-        <h1 className="text-center" style={{'marginBottom': '15%'}} >Movie Finder</h1>
-        <div className="row">
+      <div className='container'>
+        <h1 className='text-center' style={ { marginBottom: '15%' } } >Movie Finder</h1>
+        <div className='row'>
             <img
-              className="detail-img img-responsive"
-              src={poster}
-              alt="Detail image"
+              className='detail-img img-responsive'
+              src={ poster }
+              alt='Detail image'
             />
-          <div className="col-sm-8">
-            <div className="card text-center">
-              <h4 className="card-header">Movie Detail</h4>
-              <div className="card-body">
-                <h5 className="card-title">{title}</h5>
-                <span className="badge badge-primary">{year}</span>
-                <span className="badge badge-primary">{runtime}</span>
-                <span className="badge badge-primary">{genre}</span>
+          <div className='col-sm-8'>
+            <div className='card text-center'>
+              <h4 className='card-header'>Movie Detail</h4>
+              <div className='card-body'>
+                <h5 className='card-title'>{title}</h5>
+                <span className='badge badge-primary'>{year}</span>
+                <span className='badge badge-primary'>{runtime}</span>
+                <span className='badge badge-primary'>{genre}</span>
                 <br />
                 <p>{plot}</p>
                 <br />
@@ -49,7 +49,7 @@ class MovieDetailContainer extends React.Component {
             </div>
           </div>
         </div>
-        <a id="button" href={`#/`} className="btn btn-primary" style={{'marginTop': '5%'}}>
+        <a id='button' href={  `#/` } className='btn btn-primary' style={ { marginTop: '5%' } }>
             Go Back
           </a>
       </div>

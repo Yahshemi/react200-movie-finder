@@ -1,5 +1,5 @@
 export const types = {
-  UPDATE_MOVIE_DETAIL: "UPDATE_MOVIE_DETAIL"
+  UPDATE_MOVIE_DETAIL: 'UPDATE_MOVIE_DETAIL'
 };
 
 export function updateMovieDetail(detail) {

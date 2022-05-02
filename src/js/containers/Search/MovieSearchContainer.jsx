@@ -1,5 +1,5 @@
-import React from "react";
-import { updateMovieTitle, updateInput } from "./movieSearchActions";
+import React from 'react';
+import { updateMovieTitle, updateInput } from './movieSearchActions';
 
 class MovieSearchContainer extends React.Component {
   constructor(props) {
@@ -20,37 +20,37 @@ class MovieSearchContainer extends React.Component {
   render() {
     const { resultList, input } = this.props;
     return (
-      <div className="container">
-        <a href="/"><h1 className="text-center search-text">Movie Finder</h1></a>
-        <div style={{ marginBottom: "10px" }} className="input-group">
+      <div className='container'>
+        <a href='/'><h1 className='text-center search-text'>Movie Finder</h1></a>
+        <div style={{ marginBottom: '10px' }} className='input-group'>
           <input
-            type="text"
+            type='text'
             onChange={this.handleInputChange}
-            className="form-control"
-            placeholder="Search Movie"
+            className='form-control'
+            placeholder='Search Movie'
           />
-          <span className="input-group-btn">
-            <button onClick={this.handleClick} className="btn go-button" >
+          <span className='input-group-btn'>
+            <button onClick={this.handleClick} className='btn go-button' >
               Go!
             </button>
           </span>
         </div>
-        <div className="row text-center">
+        <div className='row text-center'>
           {resultList.map(list => (
-            <div className="col-sm-4" key={list.imdbID} style={{'marginBottom': '25px'}}>
-              <div className="card" style={{'height': '100%'}} key={list.imdbID}>
-                <div className="card-body">
-                  <img className="card-img" src={list.Poster} />
+            <div className='col-sm-4' key={list.imdbID} style={ { marginBottom: '25px' } }>
+              <div className='card' style={ {height: 100%} } key={ list.imdbID }>
+                <div className='card-body'>
+                  <img className='card-img' src={ list.Poster } />
                 </div>
-                <div className="card-footer">
+                <div className='card-footer'>
                   <a
-                    href={`#/movie/${list.imdbID}`}
-                    className="btn btn-info"
-                    style={{}}
+                    href={ `#/movie/${list.imdbID}` }
+                    className='btn btn-info'
+                    style={ {} }
                   >
                     More Information
                   </a>
-                  </div>
+                </div>
               </div>
             </div>
           ))}

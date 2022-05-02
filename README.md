@@ -14,9 +14,7 @@ npm run build
 npm run start
 ```
 
-## Special Thanks
-
-Thanks to all the awesome people at [Flat Icon](https://www.flaticon.com/), and [Color Hunt](https://colorhunt.co/). Because of them, I can create stylish projects.
+[Flat Icon](https://www.flaticon.com/) [Color Hunt](https://colorhunt.co/).
 
 ## Check Me Out
 

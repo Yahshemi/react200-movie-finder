@@ -1,36 +1,36 @@
-import { types } from "./movieDetailActions";
+import { types } from './movieDetailActions';
 
 const defaultState = {
-  title: "",
-  year: "",
-  runtime: "",
-  genre: "",
-  plot: "",
-  awards: "",
-  poster: "",
-  metascore: "",
-  imdbrating: ""
+  title: '',
+  year: '',
+  runtime: '',
+  genre: '',
+  plot: '',
+  awards: '',
+  poster: '',
+  metascore: '',
+  imdbrating: ''
 };
 
 export default function MovieDetailReducer(state = defaultState, action) {
   const { type, payload } = action;
 
   switch (type) {
-    case types.UPDATE_MOVIE_DETAIL + "_PENDING": {
+    case types.UPDATE_MOVIE_DETAIL + '_PENDING': {
       return {
         ...state,
-        title: "",
-        year: "",
-        runtime: "",
-        genre: "",
-        plot: "",
-        awards: "",
-        poster: "",
-        metascore: "",
-        imdbrating: ""
+        title: '',
+        year: '',
+        runtime: '',
+        genre: '',
+        plot: '',
+        awards: '',
+        poster: '',
+        metascore: '',
+        imdbrating: ''
       };
     }
-    case types.UPDATE_MOVIE_DETAIL + "_FULFILLED": {
+    case types.UPDATE_MOVIE_DETAIL + '_FULFILLED': {
       return {
         ...state,
         title: payload.title,
